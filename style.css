@@ -1,0 +1,35 @@
+h1 {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: blue;
+  font-size: 18px;
+  text-align: center;
+}
+
+h3 {
+  color: green;
+  font-size: 16px;
+  text-align: center;
+}
+
+h4 {
+  color: orange;
+  font-size: 14px;
+  text-align: center;
+}
+
+h5 {
+  color: purple;
+  font-size: 12px;
+  text-align: center;
+}
+
+h6 {
+  color: brown;
+  font-size: 10px;
+  text-align: center;
+}
