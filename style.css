@@ -11,15 +11,18 @@ h2.service-h2 {
 }
 
 h3 {
-  color: blueviolet;
   font-size: 1.5rem;
   text-align: center;
+  font-size: 2.4rem;
+  background-color: wheat;
 }
 
 h4 {
   color: orange;
   font-size: 1.4rem;
   text-align: center;
+  font-size: 2.4rem;
+  background-color: wheat;
 }
 
 * {
@@ -43,8 +46,13 @@ body {
 /* a:link a:visited {
 } */
 
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
 .secao {
-  padding: 95.4rem 2rem;
+  padding: 7.63rem 2rem;
 }
 
 .cabecalho {
@@ -83,44 +91,60 @@ a:active {
   margin-left: 0.5rem;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-size: 2.4rem;
-  background-image: url(https://www.unicesumar.edu.br/blog/wp-content/uploads/2020/02/unicesumar_unicesumaread_image_13.jpeg);
-}
-
 p.h3,
 p.h4 {
   font-size: 1.9rem;
 }
 
-div.about {
-  background-image: linear-gradient(
-    0deg,
-    rgb(0, 117, 102),
-    rgba(0, 163, 141, 0.5)
-  );
-  padding: 2rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+.secao.secao-about {
+  background-color: wheat;
 }
 
 .about-p {
   color: #404040;
 }
 
-.rodape {
-  color: white;
-  padding: 2rem;
-  text-align: center;
-  margin-top: 2rem;
-  font-weight: 600;
+.secao.secao-service {
+  background-image: url(https://www.unicesumar.edu.br/blog/wp-content/uploads/2020/02/unicesumar_unicesumaread_image_13.jpeg);
+  background-size: cover;
 }
 
-.feedback-h3 {
+.secao.secao-service-res {
+  background-image: url(https://image.freepik.com/vetores-gratis/abstrata-tecnologia-cinza-linhas-de-fundo_77417-499.jpg);
+}
+
+.secao.secao-service-pred {
+  background-image: url(https://image.freepik.com/vetores-gratis/abstrata-tecnologia-cinza-linhas-de-fundo_77417-499.jpg);
+}
+
+.secao.secao-service-ind {
+  background-image: url(https://image.freepik.com/vetores-gratis/abstrata-tecnologia-cinza-linhas-de-fundo_77417-499.jpg);
+}
+
+.secao.secao-other-services {
+  background-image: url(https://samatec.vteximg.com.br/arquivos/ids/163415-1000-1000/instalando-ar.jpg?v=635965889565230000);
+}
+
+.secao.secao-footer {
+  background-color: rgb(124, 120, 120);
+  padding: 2rem;
+}
+
+.secao.secao-footer ul {
+  list-style-type: none;
+}
+
+.rodape {
+  color: black;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+
+.feedback-wrapper {
   color: white;
-  text-align: center;
+  background-color: wheat;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -132,12 +156,15 @@ div.about {
   margin-bottom: 2rem;
 }
 
-.rodape-p {
+.rodape-p,
+.harri {
   color: #404040;
   font-size: 2rem;
-  text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-weight: 1.92rem;
+  font-size: 1.92rem;
+  text-decoration: none;
 }
 
 .harri-tel {
@@ -147,14 +174,12 @@ div.about {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  text-decoration: none;
 }
 
-.harri {
-  color: red;
-  font-size: 2rem;
-  font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+a:hover,
+a:active {
+  color: rgb(255, 255, 255);
 }
 
 .img-whatsapp {
