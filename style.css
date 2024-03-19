@@ -1,83 +1,165 @@
 h1 {
-  color: white;
-  font-size: 20px;
-  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
 }
 
-h2 {
-  color: blue;
-  font-size: 18px;
+h2.service-h2 {
+  color: white;
+  font-size: 3.5rem;
   text-align: center;
+  font-weight: 600;
 }
 
 h3 {
-  color: green;
-  font-size: 16px;
+  color: blueviolet;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 h4 {
   color: orange;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-align: center;
-}
-
-h5 {
-  color: purple;
-  font-size: 12px;
-  text-align: center;
-}
-
-h6 {
-  color: brown;
-  font-size: 10px;
-  text-align: center;
-}
-
-html	{
-background-color: white;
-/* font-size: 62.5%; */
-}
-
-h1,h2,h3,h4,h5,h6
-{
-font-size: 2.4rem;
-background-image: url(https://www.unicesumar.edu.br/blog/wp-content/uploads/2020/02/unicesumar_unicesumaread_image_13.jpeg) ;
-}
-
-h7,h8,h9,h10,h11,h12,h13,h14,h15,h16
-{
-font-size: 1.5rem;
-}	
-
-p  {
-font-size: 1.2rem;
-color: black;
 }
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #404040;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+/* a:link a:visited {
+} */
+
+.secao {
+  padding: 95.4rem 2rem;
+}
+
+.cabecalho {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 1.6rem 3.12rem;
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+/* temporario */
+nav {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+a.item-cabecalho {
+  color: #112e61;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+a:hover,
+a:active {
+  color: #f60;
+}
+
+.item-cabecalho.have-downtriangle::after {
+  content: "\2BC6";
+  margin-left: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 2.4rem;
+  background-image: url(https://www.unicesumar.edu.br/blog/wp-content/uploads/2020/02/unicesumar_unicesumaread_image_13.jpeg);
+}
+
+p.h3,
+p.h4 {
+  font-size: 1.9rem;
 }
 
 div.about {
   background-image: linear-gradient(
     0deg,
     rgb(0, 117, 102),
-    rgba(0, 163, 141, 0.5) 
+    rgba(0, 163, 141, 0.5)
   );
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
-a {
-display: row;
-height: 5rem;
-width: 5rem;
-color: blueviolet;
-position: relative;
-left: 20rem;
-text-decoration: none;
+.about-p {
+  color: #404040;
 }
 
+.rodape {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.feedback-h3 {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.outros-servicos {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rodape-p {
+  color: #404040;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.harri-tel {
+  color: orange;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.harri {
+  color: red;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.img-whatsapp {
+  width: 5rem;
+  position: fixed;
+  top: 30rem;
+  right: 1rem;
+}
