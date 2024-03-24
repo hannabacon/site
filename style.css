@@ -4,13 +4,6 @@ h1 {
   text-align: center;
 }
 
-h2.service-h2 {
-  color: black;
-  font-size: 3.5rem;
-  text-align: center;
-  font-weight: 600;
-}
-
 h3 {
   font-size: 1.5rem;
   text-align: center;
@@ -31,6 +24,11 @@ h4 {
   box-sizing: border-box;
 }
 
+img {
+  width: 18rem;  
+  height: auto; 
+}
+
 html {
   background-color: white;
   font-size: 62.5%;
@@ -43,8 +41,70 @@ body {
   line-height: 1.4;
 }
 
+
+
 /* a:link a:visited {
 } */
+
+.container-2 {
+  display: flex;
+  justify-content: space-around;
+}
+.form-container-2 {
+  width: 70%;
+}
+.map-container-2 {
+  width: 30%;
+}
+
+.carousel-image-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-image {
+  border-radius: 15px;
+  width: 45%;
+  object-fit: cover;
+}
+
+.carousel-indicators li {
+  background-color: #000;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.carousel-image-container {
+  display: flex;
+  justify-content: space-between; /* Isso adiciona espaço igual entre as imagens */
+}
+
+/* Estilo para as imagens pequenas */
+.imagem-pequena {
+  border: 0.125rem solid orange;
+  border-radius: 0.625rem; /* Ajuste conforme necessário */
+  width: 6.25rem; /* Ajuste conforme necessário */
+  height: 6.25rem; /* Ajuste conforme necessário */
+}
+
+/* Estilo para os círculos de navegação */
+.circulo-navegacao {
+  display: inline-block;
+  width: 0.9375rem; /* Ajuste conforme necessário */
+  height: 0.9375rem; /* Ajuste conforme necessário */
+  background-color: grey;
+  border-radius: 50%;
+  margin: 0.3125rem; /* Ajuste conforme necessário */
+}
+
+.circulo-navegacao.ativo {
+  background-color: red; /* Cor do estado ativo, ajuste conforme necessário */
+}
+
+.circulo-navegacao.ativo {
+  background-color: red; /* Cor do estado ativo, ajuste conforme necessário */
+}
 
 .container {
   max-width: 100rem;
@@ -55,21 +115,55 @@ body {
   padding: 7.63rem 2rem;
 }
 
+.secao-eletrica p {
+  display: inline-block; 
+  width: 33%; 
+  vertical-align: top;
+  font-weight: 600;
+  color: orange;
+}
+
+.secao-climatizacao p {
+  display: inline-block; 
+  width: 33%; 
+  vertical-align: top;
+  font-weight: 600;
+  color: rgb(0, 162, 255);
+}
+
+h2.service-ele {
+  color: orange;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+h2.service-clima {
+  color: rgb(0, 162, 255);
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
 .cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.12rem;
   position: sticky;
+  z-index: 9999;
   top: 0;
   left: 0;
   background-color: white;
   padding: 1.6rem 3.12rem;
   box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
 }
-/* temporario */
-nav {
-  display: none;
-}
 
 nav ul {
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 a.item-cabecalho {
@@ -84,6 +178,10 @@ a.item-cabecalho {
 a:hover,
 a:active {
   color: #f60;
+}
+
+ul.services-list {
+  display: none;
 }
 
 .item-cabecalho.have-downtriangle::after {
@@ -111,11 +209,11 @@ p.h4 {
 }
 
 .secao.secao-eletrica {
-  background-image: url(https://image.freepik.com/vetores-gratis/abstrata-tecnologia-cinza-linhas-de-fundo_77417-499.jpg);
+  background-color:#404040;
 }
 
 .secao.secao-climatizacao {
-  background-image: url(https://image.freepik.com/vetores-gratis/abstrata-tecnologia-cinza-linhas-de-fundo_77417-499.jpg);
+  background-color:rgb(221, 221, 221);
 }
 
 .secao.secao-footer {
