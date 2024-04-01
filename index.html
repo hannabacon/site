@@ -7,6 +7,26 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+  <script>
+    var firebaseConfig = { 
+      apiKey: "AIzaSyCJbsfFMlOZ-wpc7DsRduk9vDqnRSN-7kM", 
+      authDomain: "harrieletricistabc.firebaseapp.com", 
+      projectId: "harrieletricistabc", 
+      storageBucket: "harrieletricistabc.appspot.com", 
+      messagingSenderId: "151881488836", 
+      appId: "1:151881488836:web:70b28dece9bd6e049f6c91" 
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
   <!-- CABEÇALHO -->
   <header class="cabecalho">
     <img src="logo.jpeg" alt="Logo qlqr">
