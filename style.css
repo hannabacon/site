@@ -100,31 +100,95 @@ body {
 /* Estilos dos serviços */
 .services-grid {
   display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.12rem;
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 1.6rem 3.12rem;
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
-.service-item {
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+a.item-cabecalho {
+  color: #112e61;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+a:hover,
+a:active {
+  color: #f60;
+}
+
+ul.services-list {
+  display: none;
+}
+
+.item-cabecalho.have-downtriangle::after {
+  content: "\2BC6";
+  margin-left: 0.5rem;
+}
+
+p.h3,
+p.h4 {
+  font-size: 1.9rem;
+}
+
+.secao.secao-about {
+  background-color: wheat;
+}
+
+.about-p {
+  color: #404040;
   text-align: center;
 }
 
-.service-title {
-  font-size: 24px;
-  margin-bottom: 20px;
+.secao.secao-service {
+  background-image: url(https://www.unicesumar.edu.br/blog/wp-content/uploads/2020/02/unicesumar_unicesumaread_image_13.jpeg);
+  background-size: cover;
 }
 
-.service-description {
-  font-size: 18px;
-  margin-bottom: 20px;
+.secao.secao-eletrica {
+  background-color: #404040;
 }
 
-/* Estilos das seções de detalhes dos serviços */
-.eletrica-grid,
-.climatizacao-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 50px;
+.secao.secao-climatizacao {
+  background-color: rgb(221, 221, 221);
+}
+
+.secao.secao-footer {
+  background-color: rgb(124, 120, 120);
+  padding: 2rem;
+}
+
+.secao.secao-footer ul {
+  list-style-type: none;
+}
+
+.rodape {
+  color: black;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+
+.feedback-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .eletrica-item,
@@ -158,12 +222,6 @@ body {
 /* Estilos do ícone do WhatsApp */
 .whatsapp-link {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.whatsapp-icon {
-  width: 50px;
-  height: 50px;
+  top: 30rem;
+  right: 1rem;
 }
