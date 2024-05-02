@@ -1,129 +1,132 @@
 .banner {
-  width: 50%;
-  height: 30%; /* Ajuste a altura conforme necessário */
-  background-size: cover;
-  background-position: 0%;
+  width: 50%; /* Define a largura do banner como 50% do elemento pai */
+  height: 30%; /* Define a altura do banner como 30% do elemento pai */
+  background-size: cover; /* Faz com que a imagem de fundo cubra todo o espaço disponível */
+  background-position: 0%; /* Posiciona a imagem de fundo no início do elemento */
 }
 
 .logo {
-  max-width: 250px; /* Ajuste o tamanho conforme necessário */
+  max-width: 250px; /* Define a largura máxima do logo para 250px */
 }
+
 .trabalhos {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
+  display: flex; /* Define o display para flex, permitindo a distribuição dos itens em uma linha ou coluna */
+  justify-content: space-between; /* Distribui os itens igualmente no container, com espaço máximo entre eles */
+  margin-top: 50px; /* Adiciona uma margem superior de 50px */
 }
+
 .trabalho-item {
-  flex: 0 0 24%; /* Para 4 itens em uma linha */
-  margin-bottom: 20px;
+  flex: 0 0 24%; /* Define a capacidade de um item crescer (0), encolher (0) e a base (24%). Isso significa que cada item ocupará 24% do espaço disponível */
+  margin-bottom: 20px; /* Adiciona uma margem inferior de 20px */
 }
+
 .trabalho-img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+  width: 100%; /* Define a largura da imagem para 100% do elemento pai */
+  height: auto; /* A altura da imagem é automaticamente ajustada para manter a proporção da imagem */
+  border-radius: 5px; /* Adiciona bordas arredondadas à imagem com um raio de 5px */
 }
 
 .header {
-  background-color: white;
+  background-color: white; /* Define a cor de fundo do cabeçalho para branco */
 }
 
 .header-logo .logo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 100%; /* Define a largura do logo para 100% do elemento pai */
+  height: 100%; /* Define a altura do logo para 100% do elemento pai */
+  object-fit: contain; /* Faz com que o logo mantenha suas proporções ao redimensionar */
 }
 
 .hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 70%;
-  color: white;
+  position: absolute; /* Define a posição do hero para absoluta */
+  top: 50%; /* Posiciona o hero no meio verticalmente */
+  left: 50%; /* Posiciona o hero no meio horizontalmente */
+  transform: translate(-50%, -50%); /* Centraliza o hero */
+  text-align: center; /* Alinha o texto do hero ao centro */
+  width: 70%; /* Define a largura do hero para 70% do elemento pai */
+  color: white; /* Define a cor do texto do hero para branco */
 }
 
 /* Reset de estilos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Remove a margem padrão de todos os elementos */
+  padding: 0; /* Remove o padding padrão de todos os elementos */
+  box-sizing: border-box; /* Faz com que a largura e altura de um elemento incluam o padding e a borda */
 }
 
 /* Estilo global */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: Arial, sans-serif; /* Define a fonte do corpo do documento para Arial, se não estiver disponível, usa sans-serif */
+  line-height: 1.6; /* Define a altura da linha para 1.6 */
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 1200px; /* Define a largura máxima do container para 1200px */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+  padding: 0 20px; /* Adiciona um padding horizontal de 20px ao container */
 }
 
 .header-logo img {
-  height: 50px;
-  width: auto;
+  height: 50px; /* Define a altura da imagem do logo para 50px */
+  width: auto; /* A largura da imagem é automaticamente ajustada para manter a proporção da imagem */
 }
 
 .header-nav .nav-list li {
-  display: inline-block;
-  margin-right: 20px;
+  display: inline-block; /* Define o display dos itens da lista para inline-block, permitindo que eles sejam dispostos em uma linha */
+  margin-right: 20px; /* Adiciona uma margem direita de 20px aos itens da lista */
 }
 
 .header-nav .nav-list li:last-child {
-  margin-right: 0;
+  margin-right: 0; /* Remove a margem direita do último item da lista */
 }
 
 .header-nav .nav-list li a {
-  color: green;
-  text-decoration: none;
-  font-size: 18px;
+  color: green; /* Define a cor dos links para verde */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-size: 18px; /* Define o tamanho da fonte dos links para 18px */
 }
 
 /* Estilos do hero section */
 
 .hero-heading {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 48px; /* Define o tamanho da fonte do título do hero para 48px */
+  margin-bottom: 20px; /* Adiciona uma margem inferior de 20px ao título do hero */
 }
 
 .hero-subheading {
-  font-size: 24px;
-  margin-bottom: 30px;
+  font-size: 24px; /* Define o tamanho da fonte do subtítulo do hero para 24px */
+  margin-bottom: 30px; /* Adiciona uma margem inferior de 30px ao subtítulo do hero */
 }
 
 .hero-text {
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 18px; /* Define o tamanho da fonte do texto do hero para 18px */
+  margin-bottom: 30px; /* Adiciona uma margem inferior de 30px ao texto do hero */
 }
 
 .btn {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  display: inline-block; /* Define o display do botão para inline-block */
+  background-color: #333; /* Define a cor de fundo do botão para #333 */
+  color: #fff; /* Define a cor do texto do botão para branco */
+  padding: 10px 20px; /* Adiciona um padding de 10px vertical e 20px horizontal ao botão */
+  text-decoration: none; /* Remove o sublinhado do botão */
+  border-radius: 5px; /* Adiciona bordas arredondadas ao botão com um raio de 5px */
+  transition: background-color 0.3s ease; /* Adiciona uma transição à cor de fundo do botão */
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: #555; /* Altera a cor de fundo do botão para #555 quando o mouse está sobre ele */
 }
 
 /* Estilos das seções */
 .section-heading {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 30px;
+  font-size: 36px; /* Define o tamanho da fonte do título da seção para 36px */
+  text-align: center; /* Centraliza o texto do título da seção */
+  margin-bottom: 30px; /* Adiciona uma margem inferior de 30px ao título da seção */
 }
 
 .section-text {
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 30px;
+  font-size: 18px; /* Define o tamanho da fonte do texto da seção para 18px */
+  text-align: center; /* Centraliza o texto da seção */
+  margin-bottom: 30px; /* Adiciona uma margem inferior de 30px ao texto da seção */
 }
 
 /* Estilos dos serviços */
@@ -340,7 +343,7 @@ body {
 
 .btn-primary {
   position: absolute;
-  top: 80%; /* Ajuste conforme necessário */
+  top: 80%;
   left: 50%;
   transform: translateX(-50%);
 }
