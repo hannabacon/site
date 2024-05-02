@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harri Eletricista e Climatização</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
-  <body>
+
+
+  <!-- CABEÇALHO ONDE DEFINIMOS A LOGO E O QUE IREMOS MOSTRAR  -->
     <header class="header">
       <div class="container">
         <div class="header-logo">
-          <img src="foto.png" alt="Logo da Empresa" />
+          <img src="logo.jpeg" alt="Logo da Empresa" class="logo" />
         </div>
         <nav class="header-nav">
-          <div class="menu-icon">☰</div>
           <ul class="nav-list">
-            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#about">Sobre nós</a></li>            
             <li><a href="#services">Serviços</a></li>
             <li><a href="#feedback">Feedbacks</a></li>
             <li><a href="#contact">Contato</a></li>
@@ -25,15 +25,8 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero-heading">HARRI ELETRICISTA</h1>
-        <h2 class="hero-subheading">Soluções em Elétrica e Climatização</h2>
-        <p class="hero-text">Sua segurança e conforto em primeiro lugar.</p>
-        <a href="#services" class="btn btn-primary">Ver Serviços</a>
-      </div>
-    </section>
 
+    <!-- UMA BREVE INSTRODUÇÃO DE QUEM É O HARRI ELETRICISTA  JA QUE O BANNER JA CONTEM AS INFO DE TRABALHOS E ETC-->
     <section id="about" class="about">
       <div class="container">
         <h2 class="section-heading">Sobre nós</h2>
@@ -45,301 +38,151 @@
       </div>
     </section>
 
-    <section id="services" class="services">
+
+    <!-- EMPLEMENTAÇÃO DO BANNER -->
+    <section id="banner" class="banner">
       <div class="container">
-        <h2 class="section-heading">Nossos Serviços</h2>
-        <div class="services-grid">
-          <div class="service-item">
-            <h3 class="service-title">Serviços Elétricos</h3>
-            <p class="service-description">
-              Oferecemos soluções elétricas para residências, empresas e
-              indústrias.
-            </p>
-            <a href="#eletrica" class="btn btn-secondary">Saiba Mais</a>
-          </div>
-          <div class="service-item">
-            <h3 class="service-title">Serviços de Climatização</h3>
-            <p class="service-description">
-              Instalação, manutenção e reparos em sistemas de climatização.
-            </p>
-            <a href="#climatizacao" class="btn btn-secondary">Saiba Mais</a>
-          </div>
-        </div>
+        <img src="banner.jpeg" alt="Descrição do Banner" />
       </div>
     </section>
 
-    <section id="eletrica" class="eletrica">
-      <div class="container">
-        <h2 class="section-heading">Serviços Elétricos</h2>
-        <div class="eletrica-grid">
-          <div class="eletrica-item">
-            <h3 class="eletrica-title">Residencial</h3>
-            <p class="eletrica-description">
-              Instalações elétricas em residências.
-            </p>
-          </div>
-          <div class="eletrica-item">
-            <h3 class="eletrica-title">Industrial</h3>
-            <p class="eletrica-description">
-              Soluções elétricas para indústrias.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="climatizacao" class="climatizacao">
-      <div class="container">
-        <h2 class="section-heading">Serviços de Climatização</h2>
-        <div class="climatizacao-grid">
-          <div class="climatizacao-item">
-            <h3 class="climatizacao-title">Instalação</h3>
-            <p class="climatizacao-description">
-              Instalação de sistemas de climatização.
-            </p>
-          </div>
-          <div class="climatizacao-item">
-            <h3 class="climatizacao-title">Manutenção</h3>
-            <p class="climatizacao-description">
-              Manutenção preventiva e corretiva em equipamentos de climatização.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- FEEDBACK DOS CLIENTES RETIRADOS DA AVALIAÇÃO DO GOOGLE  -->
 
     <section id="feedback" class="feedback">
-      <div class="container">
-        <h2 class="section-heading">Feedbacks dos Clientes</h2>
-        <p class="section-text">
-          Veja o que nossos clientes têm a dizer sobre nossos serviços.
-        </p>
-        <!-- Adicione aqui um componente para mostrar feedbacks -->
+      <div class="trabalhos">
+        <div class="container">
+          <h2 class="section-heading">Feedbacks de clientes</h2>
+          <div class="trabalhos-grid">
+            <div class="trabalho-item">
+              <img
+                src="feedback1.png"
+                alt="Ar Condicionado Flutuante"
+                class="trabalho-img"
+              />
+            </div>
+            <div class="trabalho-item">
+              <img
+                src="feedback2.png"
+                alt="Ar Condicionado Furado na Parede"
+                class="trabalho-img"
+              />
+            </div>
+            <div class="trabalho-item">
+              <img
+                src="feedback3.png"
+                alt="Instalação de Escada Elétrica"
+                class="trabalho-img"
+              />
+            </div>
+            <div class="trabalho-item">
+              <img
+                src="feedback4.png"
+                alt="Instalação de Rede Elétrica"
+                class="trabalho-img"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-heading">Entre em Contato</h2>
-        <p class="section-text">
-          Estamos prontos para atendê-lo. Entre em contato conosco para
-          solicitar um orçamento ou tirar dúvidas.
-        </p>
-        <form>
+
+    <!-- UM PEQUENO FORMULARIO PARA ENTRAR EM CONTATO E TIRAR DUVIDAS -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-heading">Entre em Contato</h2>
+      <p class="section-text">
+        Estamos prontos para atendê-lo. Entre em contato conosco para
+        solicitar um orçamento ou tirar dúvidas.
+      </p>
+      <form class="contact-form">
+        <div class="form-group">
           <label for="nome">Nome:</label><br />
-          <input type="text" id="nome" name="nome" required /><br />
-          <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" required /><br />
+          <input type="text" id="nome" name="nome" required class="form-control" /><br />
+        </div>
+        <div class="form-group">
+          <label for="email">Telefone:</label><br />
+          <input type="email" id="email" name="email" required class="form-control" /><br />
+        </div>
+        <div class="form-group">
           <label for="mensagem">Mensagem:</label><br />
-          <textarea id="mensagem" name="mensagem" required></textarea><br />
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
+          <textarea id="mensagem" name="mensagem" required class="form-control"></textarea><br />
+        </div>
+      </form>
+    </div>
+  </section>
 
+
+  <!-- UMA BREVE DEMONSTRAÇÃO DE ALGUNS TRABALHOS REALIZADOS -->
     <footer class="footer">
       <div class="container">
         <p class="footer-text">
-          © 2024 Harri Eletricista e Climatização. Todos os direitos reservados.
+          © 2024 Harri Eletricista e Climatização. Conheça um pouco do nosso trabalho 
         </p>
       </div>
     </footer>
 
-    <a
-      href="https://web.whatsapp.com/47992424949"
-      target="_blank"
-      class="whatsapp-link"
-    >
-      <img
-        class="whatsapp-icon"
-        src="https://img.icons8.com/color/48/000000/whatsapp.png"
-        alt="Logo do WhatsApp"
-      />
-    </a>
-
-    <script>
-      const toggleMenu = () => {
-        const menu = document.querySelector(".header-nav .nav-list");
-        menu.classList.toggle("show");
-      };
-
-      document
-        .querySelector(".header-nav .menu-icon")
-        .addEventListener("click", toggleMenu);
-
-      // Carrossel de Imagens
-      let currentIndex = 0;
-      const carouselImages = document.querySelectorAll(".carousel-item");
-
-      const showNextImage = () => {
-        carouselImages[currentIndex].classList.remove("active");
-        currentIndex = (currentIndex + 1) % carouselImages.length;
-        carouselImages[currentIndex].classList.add("active");
-      };
-
-      setInterval(showNextImage, 3000);
-    </script>
-  </body>
-</html>
-=======
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harri Eletricista e Climatização</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-
-  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
-
-  <script>
-    var firebaseConfig = { 
-      apiKey: "AIzaSyCJbsfFMlOZ-wpc7DsRduk9vDqnRSN-7kM", 
-      authDomain: "harrieletricistabc.firebaseapp.com", 
-      projectId: "harrieletricistabc", 
-      storageBucket: "harrieletricistabc.appspot.com", 
-      messagingSenderId: "151881488836", 
-      appId: "1:151881488836:web:70b28dece9bd6e049f6c91" 
-    };
-
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  </script>
-
-  <!-- CABEÇALHO -->
-  <header class="cabecalho">
-    <img src="logo.jpeg" alt="Logo qlqr">
-    <nav>
-      <ul>          
-        <li><a class="item-cabecalho" href="sobre.html">Sobre nós</a></li>
-        <li>
-          <a class="item-cabecalho have-downtriangle" href="#">Serviços</a>
-          <ul class="services-list">
-            <li>
-              <a class="item-cabecalho" href="#">Elétrica</a>
-              <ul>
-                <li><a class="item-cabecalho" href="#">Presidencial</a></li>
-                <li><a class="item-cabecalho" href="#">Residencial</a></li>
-                <li><a class="item-cabecalho" href="#">Industrial</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="item-cabecalho" href="#">Climatização</a>
-              <ul>
-                <li><a class="item-cabecalho" href="#">Instalação</a></li>
-                <li><a class="item-cabecalho" href="#">Higienização</a></li>
-                <li><a class="item-cabecalho" href="#">Manutenção</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a class="item-cabecalho" href="#">Feedbacks</a></li>
-        <li><a class="item-cabecalho" href="#">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- CONTEÚDO SOBRE -->
-  <section class="secao secao-about">
+   <div class="trabalhos">
     <div class="container">
-      <img src="banner.jpeg" alt="banner" class="banner" />
-    </div>
-    <div class="carousel-container">
-      <!-- Carrossel para a seção Sobre -->
-      <!-- Adicione aqui o código para o carrossel -->
-    </div>
-  </section>
-
-  <!-- CONTEÚDO SERVIÇOS ELÉTRICOS -->
-  <section class="secao secao-service">
-    <h2 class="service-h2">Elétrica</h2>
-    <ul class="eletric-list">
-      <li>Predial</li>
-      <li>Residencial</li>
-      <li>Industrial</li>
-    </ul>
-    <div class="carousel-container">
-      <!-- Carrossel para a seção de Serviços Elétricos -->
-      <!-- Adicione aqui o código para o carrossel -->
-    </div>
-  </section>
-
-  <!-- CONTEÚDO SERVIÇOS DE CLIMATIZAÇÃO -->
-  <section class="secao secao-clima">
-    <h2 class="service-h2">Climatização</h2>
-    <ul class="eletric-list">
-      <li>Instalação</li>
-      <li>Higienização</li>
-      <li>Manutenção</li>
-    </ul>
-    <div class="carousel-container">
-      <!-- Carrossel para a seção de Serviços de Climatização -->
-      <!-- Adicione aqui o código para o carrossel -->
-    </div>
-  </section>
-
-   <!-- CONTEÚDO FEEDBACKS -->
-   <section class="feedback">
-    <h1>Saiba mais sobre o serviço</h1>
-    <div class="container-2">
-      <div class="form-container">
-        <form>
-          <label for="nome">Nome:</label><br>
-          <input type="text" id="nome" name="nome"><br>
-          <label for="servico">Tipo de serviço:</label><br>
-          <select id="servico" name="servico">
-            <option value="">Residencial</option>
-            <option value="">Industrial</option>
-            <option value="">Predial</option>
-            <!-- Adicione suas opções aqui -->
-          </select><br>
-          <label for="detalhes">Detalhes:</label><br>
-          <textarea id="detalhes" name="detalhes"></textarea><br>
-          <label for="comentario">Comentário:</label><br>
-          <textarea id="comentario" name="comentario"></textarea><br>
-          <input type="submit" value="Enviar">
-        </form>
-      </div>
-      <div class="map-container">
-        <!-- Substitua o src pelo link do Google Maps -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.321111111111!2d-48.644497!3d-26.996309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d7f27cb0018ab9%3A0xa239c7240270858b!2sHarri%20eletricista%20%26%20Climatiza%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1638489750956!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <h2 class="section-heading">Nossos Trabalhos</h2>
+      <div class="trabalhos-grid">
+        <div class="trabalho-item">
+          <p class="trabalho-descricao">Ar Condicionado Flutuante</p>
+          <img
+            src="arflutua.jpeg"
+            alt="Ar Condicionado Flutuante"
+            class="trabalho-img"
+          />
+        </div>
+        <div class="trabalho-item">
+          <p class="trabalho-descricao">Instalação de Ar Condicionado tradicional</p>
+          <img
+            src="arfuro.jpeg"
+            alt="Ar Condicionado Furado na Parede"
+            class="trabalho-img"
+          />
+        </div>
+        <div class="trabalho-item">
+          <p class="trabalho-descricao">Instalação em Galpões</p>
+          <img
+            src="escada.jpeg"
+            alt="Instalação de Escada Elétrica"
+            class="trabalho-img"
+          />
+        </div>
+        <div class="trabalho-item">
+          <p class="trabalho-descricao">Instalação de Rede Elétrica</p>
+          <img
+            src="rede.jpeg"
+            alt="Instalação de Rede Elétrica"
+            class="trabalho-img"
+          />
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
-
-  
-    <!-- CONTEÚDO RODAPÉ -->
-    <footer class="secao secao-footer">
-      <div class="container">
-        <h3 class="rodape">Contato</h3>
-        <p class="rodape-p">Entre em contato conosco.</p>
-        <ul>
-          <li class="harri">Harringson | Climatização e Elétrica</li>
-          <li>
-            <a class="harri-tel" href="https://web.whatsapp.com/47992424949">
-              Telefone: (47) 99242-4949 (WhatsApp)
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li class="harri">Harrington | Elétrica</li>
-          <li>
-            <a class="harri-tel" href="https://web.whatsapp.com/47999033556">
-              Telefone: (47) 99903-3556 (WhatsApp)
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-
-  <!-- ÍCONE WHATSAPP -->
-  <a href="https://web.whatsapp.com/47992424949" target="_blank">
-    <img class="img-whatsapp" src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="logo-whatsapp" />
+ 
+  <!-- BOTAO DE WHATSAPP AO LADO PARA ENTRAR EM CONTATO -->
+  <a
+    href="https://web.whatsapp.com/11976756824"
+    target="_blank"
+    class="whatsapp-link"
+  >
+    <img
+      class="whatsapp-icon"
+      src="https://img.icons8.com/color/48/000000/whatsapp.png"
+      alt="Logo do WhatsApp"
+    />
   </a>
+
+<!-- RODAPE -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        © 2024 Harri Eletricista e Climatização em Balneário Camboriú e região.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
->>>>>>> 73ecc28f318088ed3df145dae0dd514f7d81b9bf
